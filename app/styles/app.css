@@ -1,0 +1,78 @@
+.command-input {
+  padding: 11px;
+  font-size: 18px;
+  width: 478px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: solid 1px lightgray;
+  display: block;
+}
+
+.robot {
+  display: none;
+}
+
+.robot.placed {
+  display: block;
+}
+
+.image {
+  margin: auto;
+  width: 97px;
+  height: 97px;
+  background: url(/images/robot.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image.north {
+  transform: rotate(90deg);
+}
+
+.image.south {
+  transform: scaleX(-1) rotate(-90deg);
+}
+
+.image.east {
+  transform: scaleX(-1);
+}
+
+.image.west {
+  transform: scaleX(1);
+}
+
+.messages {
+  font-family: monospace, sans-serif;
+  margin: 50px auto;
+  width: 500px;
+}
+
+.square {
+  margin: 0 auto;
+  width: 500px;
+  position: relative;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+td {
+  height: 20%;
+  width: 20%;
+  border: 1px solid black;
+}

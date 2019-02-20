@@ -1,0 +1,7 @@
+<CommandInput @command={{action "command"}}/>
+<Grid @robot={{this.robot}}/>
+<div class="messages">
+  {{#each this.messages as |message|}}
+    {{message}}<br>
+  {{/each}}
+</div>
